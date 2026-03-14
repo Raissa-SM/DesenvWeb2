@@ -1,46 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    text-align: center;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f5f7fb;
+    margin: 0;
+    padding: 25px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
 }
 
 h1 {
+    text-align: center;
     margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* Botões */
+
+.buttons {
+    text-align: center;
+    margin-bottom: 15px;
 }
 
 button {
+    padding: 10px 18px;
     margin: 5px;
-    margin-bottom: 10px;
-    padding: 8px 15px;
+    border: none;
     border-radius: 8px;
-    border: 1px solid #ccc;
-    background-color: #f2f9ff;
-    font-size: 16px;
+    background: #3b82f6;
+    color: white;
+    font-size: 15px;
     cursor: pointer;
+    transition: 0.2s;
 }
 
 button:hover {
-    background-color: #e0f0ff;
+    background: #2563eb;
+}
+
+/* Tabela responsiva */
+
+.table-wrapper {
+    overflow-x: auto;
 }
 
 table {
-    margin: auto;
     border-collapse: collapse;
-    width: 80%;
+    width: 100%;
+    min-width: 850px;
 }
 
 th, td {
-    border: 1px solid black;
-    padding: 8px;
+    border: 1px solid #e3e6ed;
+    padding: 10px;
     text-align: center;
 }
 
-.cinza {
-    background-color: gray;
+/* Cabeçalho */
+
+thead tr:first-child {
+    background: #334155;
     color: white;
 }
 
+thead tr:nth-child(2) {
+    background: #eef2f7;
+}
+
+/* Linhas */
+
+tbody tr:nth-child(even) {
+    background: #f8fafc;
+}
+
+/* Nome do aluno */
+
+tbody td:first-child {
+    font-weight: 600;
+    background: #f1f5f9;
+}
+
+/* Inputs */
+
 input[type="number"] {
-    width: 45px;
+    width: 60px;
+    padding: 4px;
+    border-radius: 6px;
+    border: 1px solid #cbd5e1;
     text-align: center;
+    transition: 0.15s;
+}
+
+input[type="number"]:focus {
+    border-color: #3b82f6;
+    outline: none;
+}
+
+/* Linha de média */
+
+.media-notas {
+    background: #e2e8f0 !important;
+    font-weight: bold;
+}
+
+/* Coluna média alunos */
+
+.media-aluno {
+    background: #f1f5f9;
+    font-weight: bold;
+}
+
+/* Responsividade */
+
+@media (max-width: 900px) {
+
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 14px;
+    }
+
 }

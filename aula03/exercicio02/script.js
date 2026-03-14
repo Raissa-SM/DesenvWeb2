@@ -22,6 +22,7 @@ function addMediaNotas() {
     }
 
     const row = tbody.insertRow();
+    row.classList.add("media-notas");
     row.insertCell().innerText = "Média Notas";
 
     for (let col = 1; col <= 9; col++) {
@@ -88,6 +89,7 @@ function addMediaAlunos() {
         }
         const media = (count > 0 ? (soma / count).toFixed(1) : "-");
         tbody.rows[r].insertCell().innerText = media;
+        tbody.rows[r].lastChild.classList.add("media-aluno");
     }
 
     mediaAlunosAtiva = true;
