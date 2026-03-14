@@ -1,0 +1,47 @@
+<!-- http://localhost/DesenvWeb2/aula03/exercicio01/index.html -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Formulário de Contato</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Formulário de Contato</h1>
+
+<form action="destino.php" method="post">
+
+<label>Nome</label>
+<input type="text" name="nome" required>
+
+<label>Telefone</label>
+<input type="number" name="telefone" required>
+
+<label>E-mail</label>
+<input type="email" name="email" required>
+
+<label>Mensagem</label>
+<textarea name="mensagem" rows="5" required></textarea>
+
+<button type="submit" class="btn-post">
+Enviar via POST
+</button>
+
+<button type="submit"
+        class="btn-get"
+        formaction="destino.php"
+        formmethod="get">
+Enviar via GET
+</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
