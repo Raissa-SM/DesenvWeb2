@@ -1,5 +1,5 @@
-@extends('layout.principal');
-@section('titulo', '$titulo');
+@extends('layout.principal')
+@section('titulo', $titulo)
 @section('content')
 
 <h1 style="text-align: center"><?php echo $titulo?></h1>
