@@ -8,7 +8,11 @@ use App\Http\Controllers\ViagemController;
 
 Route::get('/imc', [IMCController::class, 'index']);
 Route::post('/imc/calcular', [IMCController::class, 'calcular']);
-Route::resource('/sono', SonoController::class);
-Route::resource('/viagem', ViagemController::class);
+
+Route::get('/sono', [SonoController::class, 'index']);
+Route::post('/sono/avaliar', [SonoController::class, 'avaliar']);
+
+Route::get('/viagem', [ViagemController::class, 'index']);
+Route::post('/viagem/calcular', [ViagemController::class, 'calcular']);
 
 Route::resource('/', HomeController::class);
