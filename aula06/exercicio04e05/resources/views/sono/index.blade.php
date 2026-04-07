@@ -12,5 +12,5 @@
         <button type="submit">Avaliar Sono</button>
     </form>
     <br>
-    <a href="{{ url('/') }}">Voltar para Home</a>
+    <a href="{{ url('/') }}"><button>Voltar para Home</button></a>
 @endsection

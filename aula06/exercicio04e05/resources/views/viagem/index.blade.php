@@ -21,4 +21,6 @@
 
         <button type="submit">Calcular</button>
     </form>
+    <br>
+    <a href="{{ url('/') }}"><button>Voltar para Home</button></a>
 @endsection

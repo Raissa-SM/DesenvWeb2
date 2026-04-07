@@ -8,5 +8,6 @@
         </ul>
     </div>
     <br>
-    <a href="{{ url('/viagem') }}"><button>Voltar</button></a>
+    <a href="{{ url('/viagem') }}"><button>Novo Cálculo</button></a> |
+    <a href="{{ url('/') }}"><button>Voltar para Home</button></a>
 @endsection

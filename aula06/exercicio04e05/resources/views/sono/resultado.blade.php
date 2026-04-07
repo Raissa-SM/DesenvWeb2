@@ -7,6 +7,6 @@
         <strong>Análise:</strong> {{ $status }}
     </div>
     <br>
-    <a href="{{ url('/sono') }}">Novo cálculo</a> | 
-    <a href="{{ url('/') }}">Voltar para Home</a>
+    <a href="{{ url('/sono') }}"><button>Novo cálculo</button></a> | 
+    <a href="{{ url('/') }}"><button>Voltar para Home</button></a>
 @endsection

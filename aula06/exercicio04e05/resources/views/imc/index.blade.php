@@ -17,7 +17,6 @@
         
         <button type="submit">Enviar</button>
     </form>
-    <a href="{{ url('/') }}">
-        <button type="button">Voltar para a Home</button>
-    </a>
+    <br>
+    <a href="{{ url('/') }}"><button>Voltar para a Home</button></a>
 @endsection
