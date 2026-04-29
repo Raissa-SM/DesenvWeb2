@@ -8,4 +8,3 @@ Route::get('/', function () {
 });
 
 Route::resource('contatos', ContatoController::class);
-Route::resource('contatos', ContatoController::class);
